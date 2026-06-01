@@ -1,0 +1,76 @@
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 150%;
+}
+header {
+    background-color: #e0d41f;
+}
+nav { 
+    background-color: #c4c0c0;
+    font-size: 18px;
+    display: inline-block;
+    width: 80%;
+    nav img {
+    width: 10%;
+    height: auto; /* Mantiene la proporción de la imagen sin distorsionarla */
+}
+}
+footer {
+    background-color: #c4c0c0;
+}
+li {
+    display: inline-block;
+    width: 300px;
+}
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+}
+p {
+    line-height: 1.6;
+}
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    
+    /* 1. Controla la distribución horizontal de las columnas */
+    justify-content: space-around; /* Opciones: center, space-between, space-around */
+    
+    /* 2. Controla la alineación vertical de los elementos dentro de su fila */
+    align-items: start; /* Opciones: stretch, center, start, end */
+    
+    /* 3. Controla el espacio de separación vertical entre filas */
+    row-gap: 30px; /* Puedes subir o bajar este valor en píxeles (px) o rem */
+}
+.grid img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción para que no se deformen */
+}
+.flex {
+    display: flex;
+    
+    /* 1. Controla si los elementos se mantienen en una línea o saltan a la siguiente */
+    flex-wrap: wrap; /* Opciones: wrap, nowrap, wrap-reverse */
+    
+    /* 2. Controla la distribución horizontal de los elementos */
+    justify-content: space-between; /* Opciones: center, space-between, space-around, flex-start */
+    
+    /* Opcional: Controla el espacio de separación entre los elementos */
+    gap: 20px; 
+}
